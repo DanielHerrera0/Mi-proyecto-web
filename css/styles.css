@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+h1{
+    color: #277058;
+    font-family: 'Tinos', serif;
+    font-weight: 700;
+    text-align:center;
+}
+
+h2 {
+    color: #f0f8ff;
+    font-family: 'Tinos', serif;
+    font-weight: 700;
+    text-align:center;
+}
+
+h3 {
+    color: #277058;
+    font-family: 'Tinos', serif;
+    font-weight: 700;
+    text-align:center;
+}
+
+legend {
+    color: #277058;
+    font-family: 'Tinos', serif;
+    font-weight: 700;
+}
+
+label{
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    display: block;
+}
+
+option{
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+}
+
+input{
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+}
+
+header{
+    color: #f0f8ff;
+    background-color: #015958;
+    position: sticky;
+    top: 0%;
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+}
+
+main{font-family: 'Tinos', serif;
+    font-weight: 400;
+}
+
+footer{
+    color: #f0f8ff;
+    background-color: #636363;
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+}
+
+nav a img{
+    width: 2em;
+}
+
+.imagenMain{
+    background-image: url(../assest/imagen/color.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.imagenMain2{
+    background-image: url(../assest/imagen/color2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.capas{
+    padding: 1em 1.5em;
+    margin: 0.5em 0.7em 0.5em 0.7em;
+}
+
+
+.articulo{
+    width: 20em;
+    height: 10em;
+    padding: 1em 1.5em;
+    margin: 0.5em 0.7em 1em 0.7em;
+    border: solid 0.2em #f0f8ff;
+    border-radius: 1em;
+    background-color: #277058;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #f0f8ff;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.seccionRow{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.articuloImagen{
+    width: 20em;
+    height: 35em;
+    margin: 0.5em 0.7em 1em 0.7em;
+    border: solid 0.3em #f0f8ff;
+}
+
+.logoEmpresa{
+    padding: 1em 1.5em;
+    width: 20em;
+    height: 11em;
+    margin: 0.5em 0.7em 1em 0.7em;
+    border-radius: 1em;
+    border: solid 0.3em #f0f8ff;
+}
+
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #f0f8ff;
+    border-radius: 3em;
+    text-align:center;
+    padding: 1em 1.5em;
+    margin: 0.5em 0.7em 1em 0.7em;
+}
+
+.enlacesFooter{
+    width: 15em;
+    padding: 1em 2em;
+    margin: 0.5em 0.7em 1em 0.7em;
+}
+
+.copy{
+    width: 50em;
+    padding: 0.1em 0.1em;
+    margin: 0.1em 0.1em 0.1em 0.1em;
+}
+
+.imagenServicio{
+    width: 20em;
+    height: 12em;
+    padding: 1em 1.5em;
+    margin: 0.5em 0.7em 1em 0.7em;
+    border: solid 0.1em #f0f8ff;
+    border-radius: 10em;
+    background-color: #36a781;
+}
+
+.articuloServicio{
+    width: 20em;
+    height: 15em;
+    padding: 1em 1.5em;
+    margin: 0.5em 0.7em 1em 0.7em;
+    border: solid 0.2em #f0f8ff;
+    border-radius: 1em;
+    background-color: #277058;
+}
+
+
+
