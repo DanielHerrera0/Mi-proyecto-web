@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    max-width: 1200px;
 }
 
 h1{
@@ -95,8 +94,8 @@ nav a img{
 
 
 .articulo{
-    width: 20em;
-    height: 10em;
+    width: 22em;
+    height: 13em;
     padding: 1em 1.5em;
     margin: 0.5em 0.7em 1em 0.7em;
     border: solid 0.2em #f0f8ff;
@@ -132,6 +131,7 @@ nav ul{
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 .articuloImagen{
@@ -150,6 +150,26 @@ nav ul{
     border: solid 0.3em #f0f8ff;
 }
 
+.articuloIndex{
+    height: 15em;
+    padding: 0.5em 1.5em;
+    margin: 3em 5em 3em 0em;
+    border: solid 0.2em #277058;
+    border-radius: 1em;
+
+}
+
+.color{
+    color:#277058;
+}
+
+.tamañoImagen{
+    display:block;
+    margin:auto;
+    width: 350px;
+    height: 150px;
+    ;
+}
 
 footer nav{
     display: flex;
@@ -178,22 +198,76 @@ footer nav{
 
 .imagenServicio{
     width: 20em;
-    height: 12em;
+    height: 17em;
     padding: 1em 1.5em;
     margin: 0.5em 0.7em 1em 0.7em;
     border: solid 0.1em #f0f8ff;
-    border-radius: 10em;
+    border-radius: 5em;
     background-color: #36a781;
 }
 
 .articuloServicio{
     width: 20em;
+    height: 27em;
+    padding: 1em 1.5em;
+    margin: 0.5em 0.7em 1em 0.7em;
+    border: solid 0.2em #f0f8ff;
+    border-radius: 1em;
+    background-color: #277058;
+}
+
+.articuloHistorial{
+    width: 30em;
     height: 15em;
     padding: 1em 1.5em;
     margin: 0.5em 0.7em 1em 0.7em;
     border: solid 0.2em #f0f8ff;
     border-radius: 1em;
     background-color: #277058;
+}
+
+.articuloImagenHistorial{
+    width: 27em;
+    height: 47em;
+    margin: 0.5em 0.7em 1em 0.7em;
+}
+
+.letraNav{
+    font-size:x-large;
+}
+
+.letraCopy{
+    font-size:small;
+}
+
+.gridMain{
+    display: grid;
+    gap: 0.2em;
+    grid-template-areas: 
+    "contacto"
+    "requisito"
+    "cubrimiento"
+    "tiempo";
+}
+
+.contacto{
+    grid-area: contacto;
+    background-color: #36a781;
+}
+
+.requisito{
+    grid-area: requisito;
+    background-color: #84b4a3;
+}
+
+.cubrimiento{
+    grid-area: cubrimiento;
+    background-color: #84b4a3;
+}
+
+.tiempo{
+    grid-area: tiempo;
+    background-color: #36a781;
 }
 
 
