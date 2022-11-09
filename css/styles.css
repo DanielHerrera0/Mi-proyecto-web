@@ -90,6 +90,7 @@ nav a img{
 .capas{
     padding: 1em 1.5em;
     margin: 0.5em 0.7em 0.5em 0.7em;
+    width: 98.7%;
 }
 
 
@@ -117,12 +118,12 @@ header nav{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    margin: 0%;
 }
 
 nav ul{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -131,6 +132,7 @@ nav ul{
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: flex-end;
+    text-align: center;
     flex-wrap: wrap;
 }
 
@@ -174,14 +176,12 @@ nav ul{
 footer nav{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     text-decoration: none;
     color: #f0f8ff;
-    border-radius: 3em;
     text-align:center;
-    padding: 1em 1.5em;
-    margin: 0.5em 0.7em 1em 0.7em;
+    padding: 1em 0em;
+    margin: 0.5em 0.5em 1em 0.5em;
 }
 
 .enlacesFooter{
@@ -233,11 +233,70 @@ footer nav{
 }
 
 .letraNav{
-    font-size:x-large;
+    font-size: 1.5em;
 }
 
 .letraCopy{
     font-size:small;
+}
+
+.articuloFaq{
+    width: 22em;
+    height: 13em;
+    padding: 1em 1.5em;
+    margin: 0.5em 0.7em 1em 0.7em;
+    border: solid 0.2em #f0f8ff;
+    border-radius: 1em;
+    background-color: #277058;
+}
+
+
+.gridFaq{
+    display: grid;
+    gap: 0.2em;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.header{
+    grid-area: header;
+    width: 95%;
+}
+
+.main{
+    grid-area: main;
+    width: 95%;
+}
+
+.footer{
+    grid-area: footer;
+    width: 95%;
+}
+
+.gridBoot{
+    display: grid;
+    gap: 0.2em;
+    grid-template-areas: 
+    "headerBoot"
+    "mainBoot"
+    "footerBoot";
+}
+
+.headerBoot{
+    grid-area: header;
+    width: 95%;
+}
+
+.mainBoot{
+    grid-area: main;
+    width: 95%;
+}
+
+.footerBoot{
+    grid-area: footer;
+    width: 95%;
 }
 
 .gridMain{
@@ -269,6 +328,101 @@ footer nav{
     grid-area: tiempo;
     background-color: #36a781;
 }
+
+.footerMobile{
+    display: none;
+}
+
+
+
+
+@media screen and (min-width:320px) and (max-width:479px){
+    
+    .gridMain{
+        grid-template-columns: 1fr;
+    }
+    
+    .articuloFaq{
+        width: 20em;
+        height: 10em;
+        padding: 1em 1.5em;
+        margin: 1em 0.7em 1em 0.2em;
+        border: solid 0.2em #f0f8ff;
+        border-radius: 1em;
+        background-color: #277058;
+    }
+
+    .capas{
+        font-size: 12px;
+        padding: 1em 1.5em;
+        margin: 0.2em 0.2em;
+        overflow: hidden;
+    }
+
+    .gridFaq{
+        grid-template-columns: 1fr;
+    }
+
+    .header{
+        grid-area: header;
+        width: 91%;
+    }
+    
+    .main{
+        grid-area: main;
+        width: 91%;
+    }
+    
+    .footer{
+        grid-area: footer;
+        width: 91%;
+    }
+
+    .enlacesFooter{
+        width: 10em;
+        padding: 0.5em auto;
+        margin: 0.5em 0.7em 1em 0.7em;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0%;
+    }
+
+    nav a img{
+        width: 2em;
+        display:block;
+        margin:auto;
+    }
+
+    nav ul{
+    text-align: center;
+    }
+
+    .footerMobile{
+    display:block;
+    width: 15em;
+    margin: 0.1em 0.1em 0.1em 0.1em;
+    }
+
+    .footerDesktop{
+        display: none;
+    }
+
+
+    .imagenFooter{
+        color: #f0f8ff;
+    }
+    
+
+}
+
+@media screen and (min-width:480px) and (max-width:767px){
+}
+
 
 
 
