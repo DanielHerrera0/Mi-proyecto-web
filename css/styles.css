@@ -158,7 +158,6 @@ nav ul{
     margin: 3em 5em 3em 0em;
     border: solid 0.2em #277058;
     border-radius: 1em;
-
 }
 
 .color{
@@ -333,10 +332,18 @@ footer nav{
     display: none;
 }
 
+.carouselMobile{
+    display: none;
+}
+
+.historiamobile{
+    display: none;
+}
 
 
 
-@media screen and (min-width:320px) and (max-width:479px){
+
+@media screen and (min-width:390px) and (max-width:479px){
     
     .gridMain{
         grid-template-columns: 1fr;
@@ -400,6 +407,8 @@ footer nav{
 
     nav ul{
     text-align: center;
+    padding: 0%;
+    margin: 0% 0%;
     }
 
     .footerMobile{
@@ -412,15 +421,188 @@ footer nav{
         display: none;
     }
 
+    .carouselDesktop{
+        display: none;
+    }
+
+    .carouselMobile{
+        display:block;
+    }
+
+    .historiaDesktop{
+        display: none;
+    }
+
+    .historiamobile{
+        display:block;
+        margin: auto;
+    }
 
     .imagenFooter{
         color: #f0f8ff;
     }
-    
+
+    .tamañoImagen{
+        display:block;
+        margin:auto;
+        width: 300px;
+        height: 120px;
+    }
+
+    .tamañoImagenServicio{
+        display:block;
+        margin:auto;
+        width: auto;
+        height: auto;
+    }
+
+    .articuloHistorialMobile{
+        display:block;
+        margin:auto;
+        width: auto;
+        height: auto;
+    }
+
+    .tituloHistorial{
+        color:#000000;
+    }
+
+    .notas{
+        font-size:small;
+    }
 
 }
 
 @media screen and (min-width:480px) and (max-width:767px){
+    
+    .gridMain{
+        grid-template-columns: 1fr;
+    }
+    
+    .articuloFaq{
+        width: 20em;
+        height: 10em;
+        padding: 1em 1.5em;
+        margin: 1em 0.7em 1em 0.2em;
+        border: solid 0.2em #f0f8ff;
+        border-radius: 1em;
+        background-color: #277058;
+    }
+
+    .capas{
+        font-size: 12px;
+        padding: 1em 1.5em;
+        margin: 0.2em 0.2em;
+        overflow: hidden;
+    }
+
+    .gridFaq{
+        grid-template-columns: 1fr;
+    }
+
+    .header{
+        grid-area: header;
+        width: 91%;
+    }
+    
+    .main{
+        grid-area: main;
+        width: 91%;
+    }
+    
+    .footer{
+        grid-area: footer;
+        width: 91%;
+    }
+
+    .enlacesFooter{
+        width: 10em;
+        padding: 0.5em auto;
+        margin: 0.5em 0.7em 1em 0.7em;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0%;
+    }
+
+    nav a img{
+        width: 2em;
+        display:block;
+        margin:auto;
+    }
+
+    nav ul{
+    text-align: center;
+    padding: 0%;
+    margin: 0% 0%;
+    }
+
+    .footerMobile{
+    display:block;
+    width: 15em;
+    margin: 0.1em 0.1em 0.1em 0.1em;
+    }
+
+    .footerDesktop{
+        display: none;
+    }
+
+    .carouselDesktop{
+        display: none;
+    }
+
+    .carouselMobile{
+        display:block;
+    }
+
+    .historiaDesktop{
+        display: none;
+    }
+
+    .historiamobile{
+        display:block;
+    }
+
+    .imagenFooter{
+        color: #f0f8ff;
+    }
+
+    .tamañoImagen{
+        display:block;
+        margin:auto;
+        width: 300px;
+        height: 120px;
+        ;
+    }
+
+    .tamañoImagenServicio{
+        display:block;
+        margin:auto;
+        width: auto;
+        height: auto;
+    }
+
+    .articuloHistorialMobile{
+        display:block;
+        margin:auto;
+        width: auto;
+        height: auto;
+        padding: 1em 1.5em;
+    }
+
+    .tituloHistorial{
+        color:#000000;
+    }
+
+
+    .notas{
+        font-size:small;
+    }
+
 }
 
 
