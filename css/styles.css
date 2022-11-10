@@ -372,17 +372,17 @@ footer nav{
 
     .header{
         grid-area: header;
-        width: 91%;
+        width: auto;
     }
     
     .main{
         grid-area: main;
-        width: 91%;
+        width: 9auto;
     }
     
     .footer{
         grid-area: footer;
-        width: 91%;
+        width: auto;
     }
 
     .enlacesFooter{
@@ -502,17 +502,17 @@ footer nav{
 
     .header{
         grid-area: header;
-        width: 91%;
+        width: auto;
     }
     
     .main{
         grid-area: main;
-        width: 91%;
+        width: auto;
     }
     
     .footer{
         grid-area: footer;
-        width: 91%;
+        width: auto;
     }
 
     .enlacesFooter{
