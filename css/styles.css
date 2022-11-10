@@ -71,6 +71,8 @@ nav a img{
     width: 2em;
 }
 
+
+
 .imagenMain{
     background-image: url(../assest/imagen/color.jpg);
     background-repeat: no-repeat;
@@ -127,6 +129,31 @@ nav ul{
     align-items: center;
 }
 
+.link{
+    text-decoration: none;
+    color: #f0f8ff;
+    right: 50%;
+    transition: all 0.5s;
+    will-change: width;
+}
+
+.link::after{
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: #7fffd4;
+    position: absolute;
+    bottom: 0%;
+    right: 50%;
+    transition: all 0.5s;
+    will-change: width;
+}
+
+.link:hover::after{
+    width: 100%;
+    right: 0%;
+}
+
 .seccionRow{
     display: flex;
     flex-flow: row wrap;
@@ -150,6 +177,12 @@ nav ul{
     margin: 0.5em 0.7em 1em 0.7em;
     border-radius: 1em;
     border: solid 0.3em #f0f8ff;
+    transition: 0.5s;
+}
+
+.logoEmpresa:hover{
+    transform: translateY(-10px);
+    background-color:#f0f8ff;
 }
 
 .articuloIndex{
