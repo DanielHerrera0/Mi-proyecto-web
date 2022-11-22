@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+// Header
+header{
+    color: #f0f8ff;
+    background-color: #015958;
+    position: sticky;
+    top: 0%;
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    padding: 1em 1.5em;
+    margin: 0.5em 0.7em 0.5em 0.7em;
+    width: 98.7%;
+    .navHeader{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0%;
+    }
+    .ulHeader{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .liHeader{
+        display: inline;
+    }
+    .ico{
+        width: 2em;
+        }
+    .link{
+        text-decoration: none;
+        color: #f0f8ff;
+        right: 50%;
+        transition: all 0.5s;
+        will-change: width;
+        }
+}
+
+
+
+// Main de FAQ
+
+.MainFaq{
+    background-image: url(../assest/imagen/color.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 1em 1.5em;
+    margin: 0.5em 0.7em 0.5em 0.7em;
+    width: 98.7%;
+    h1{
+        color: #277058;
+        font-family: 'Tinos', serif;
+        font-weight: 700;
+        text-align:center;
+    }
+    .seccionRow{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: flex-end;
+        text-align: center;
+        flex-wrap: wrap;
+        .articuloFaq{
+            width: 22em;
+            height: 13em;
+            padding: 1em 1.5em;
+            margin: 0.5em 0.7em 1em 0.7em;
+            border: solid 0.2em #f0f8ff;
+            border-radius: 1em;
+            background-color: #277058;
+            }
+    }
+}
+
+// footer
+
+.footerMobile{
+    display: none;
+}
+
+footer{
+    color: #f0f8ff;
+    background-color: #636363;
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    padding: 1em 1.5em;
+    margin: 0.5em 0.7em 0.5em 0.7em;
+    width: 98.7%;
+    .navFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: #f0f8ff;
+        text-align:center;
+        padding: 1em 0em;
+        margin: 0.5em 0.5em 1em 0.5em;
+        .seccionRow{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: flex-end;
+            text-align: center;
+            flex-wrap: wrap;
+            .enlacesFooter{
+                width: 15em;
+                padding: 1em 2em;
+                margin: 0.5em 0.7em 1em 0.7em;
+                .letraNav{
+                    font-size: 1.5em;
+                }
+                .ulFooter{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    .liFooter{
+                        display: inline;
+                        .aFooter{
+                            text-decoration: none;
+                            color: #f0f8ff;
+                        }
+                    }
+                }
+            }
+        }
+        .letraCopy{
+            font-size:small;
+        }
+    }
+}
