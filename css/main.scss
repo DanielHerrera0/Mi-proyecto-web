@@ -11,6 +11,7 @@ header{
     background-color: #015958;
     position: sticky;
     top: 0%;
+    z-index: 2;
     font-family: 'Tinos', serif;
     font-weight: 400;
     padding: 1em 1.5em;
@@ -27,20 +28,36 @@ header{
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        margin: auto;
     }
     .liHeader{
         display: inline;
     }
     .ico{
         width: 2em;
-        }
+    }
     .link{
         text-decoration: none;
         color: #f0f8ff;
         right: 50%;
         transition: all 0.5s;
         will-change: width;
-        }
+    }
+    .link::after{
+        content: "";
+        width: 0%;
+        height: 4px;
+        background-color: #7fffd4;
+        position: absolute;
+        bottom: 0%;
+        right: 50%;
+        transition: all 0.5s;
+        will-change: width;
+    }
+    .link:hover::after{
+        width: 100%;
+        right: 0%;
+    }
 }
 
 
@@ -59,7 +76,19 @@ header{
     h1{
         color: #277058;
         font-family: 'Tinos', serif;
-        font-weight: 700;
+        font-weight: 400;
+        text-align:center;
+    }
+    h2 {
+        color: #f0f8ff;
+        font-family: 'Tinos', serif;
+        font-weight: 400;
+        text-align:center;
+    }
+    p {
+        color: #000000;
+        font-family: 'Tinos', serif;
+        font-weight: 400;
         text-align:center;
     }
     .seccionRow{
@@ -70,16 +99,20 @@ header{
         text-align: center;
         flex-wrap: wrap;
         .articuloFaq{
-            width: 22em;
-            height: 13em;
+            width: 30em;
+            height: 15em;
             padding: 1em 1.5em;
             margin: 0.5em 0.7em 1em 0.7em;
             border: solid 0.2em #f0f8ff;
             border-radius: 1em;
             background-color: #277058;
-            }
+        }
+    }
+    .faqMobile{
+        display: none;
     }
 }
+
 
 // footer
 
@@ -132,8 +165,268 @@ footer{
                 }
             }
         }
+        .footerMobile{
+            display: none;
+        }
         .letraCopy{
             font-size:small;
+        }
+    }
+}
+
+
+
+// mediaqueries
+
+@media screen and (min-width:390px) and (max-width:479px){
+    
+    header{
+        font-size: 12px;
+        padding: 1em 1.5em;
+        margin: 0.2em 0.2em;
+        overflow: hidden;
+        .navHeader{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0%;
+        }
+        .ico{
+            width: 2em;
+            display:block;
+            margin:auto;
+        }
+        .ulHeader{
+            text-align: center;
+            padding: 0%;
+            margin: 0% 0%;
+        }
+    }
+
+
+    .MainFaq{
+        font-size: 12px;
+        padding: 1em 1.5em;
+        margin: 0.2em 0.2em;
+        overflow: hidden;
+        h1 {
+            color: #277058;
+            font-family: 'Tinos', serif;
+            font-weight: 400;
+            text-align:center;
+        }
+        h2 {
+            color: #000000;
+            font-family: 'Tinos', serif;
+            font-weight: 400;
+            text-align:center;
+        }
+        p {
+            color: #000000;
+            font-family: 'Tinos', serif;
+            font-weight: 400;
+            text-align:center;
+        }
+        ul {
+            color: #000000;
+            font-family: 'Tinos', serif;
+            font-weight: 400;
+            text-align:center;
+        }
+        .faqDesktop{
+            display: none;
+        }
+    
+        .faqMobile{
+            display:block;
+            margin: auto;
+        }
+        .carouselDesktop{
+            display: none;
+        }
+    
+        .carouselMobile{
+            display:block;
+        }
+    }
+
+    .articuloFaq{
+        width: 50em;
+        height: 17em;
+        padding: 1em 1.5em;
+        margin: 3em 5em 3em 0em;
+        border: solid 0.2em #000000;
+        border-radius: 1em;
+        .articuloFaqMobile{
+            display:block; 
+            margin: auto;
+            width: 85%;
+        }
+    }
+
+    footer{
+        font-size: 12px;
+        padding: 1em 1.5em;
+        margin: 0.2em 0.2em;
+        overflow: hidden;
+        .navFooter{
+            .footerDesktop{
+                display: none;
+            }
+            .footerMobile{
+                display:block;
+                width: 15em;
+                margin: 0.1em 0.1em 0.1em 0.1em;
+                .enlacesFooter{
+                    width: 15em;
+                    padding: auto;
+                    margin: auto;
+                    .letraNav{
+                        font-size: 1.5em;
+                    }
+                    .ulFooter{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding: 0em ;
+                        .liFooter{
+                            display: inline;
+                            .aFooter{
+                                text-decoration: none;
+                                color: #f0f8ff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:480px) and (max-width:767px){
+    
+    header{
+        font-size: 12px;
+        padding: 1em 1.5em;
+        margin: 0.2em 0.2em;
+        overflow: hidden;
+        .navHeader{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0%;
+        }
+        .ico{
+            width: 2em;
+            display:block;
+            margin:auto;
+        }
+        .ulHeader{
+            text-align: center;
+            padding: 0%;
+            margin: 0% 0%;
+        }
+    }
+
+
+    .MainFaq{
+        font-size: 12px;
+        padding: 1em 1.5em;
+        margin: 0.2em 0.2em;
+        overflow: hidden;
+        h1 {
+            color: #277058;
+            font-family: 'Tinos', serif;
+            font-weight: 400;
+            text-align:center;
+        }
+        h2 {
+            color: #000000;
+            font-family: 'Tinos', serif;
+            font-weight: 400;
+            text-align:center;
+        }
+        p {
+            color: #000000;
+            font-family: 'Tinos', serif;
+            font-weight: 400;
+            text-align:center;
+        }
+        ul {
+            color: #000000;
+            font-family: 'Tinos', serif;
+            font-weight: 400;
+            text-align:center;
+        }
+        .faqDesktop{
+            display: none;
+        }
+    
+        .faqMobile{
+            display:block;
+            margin: auto;
+        }
+        .carouselDesktop{
+            display: none;
+        }
+    
+        .carouselMobile{
+            display:block;
+        }
+    }
+
+    .articuloFaq{
+        width: 50em;
+        height: 15em;
+        padding: 1em 1.5em;
+        margin: 3em 5em 3em 0em;
+        border: solid 0.2em #000000;
+        border-radius: 1em;
+        .articuloFaqMobile{
+            display:block; 
+            margin: auto;
+            width: 85%;
+        }
+    }
+
+    footer{
+        font-size: 12px;
+        padding: 1em 1.5em;
+        margin: 0.2em 0.2em;
+        overflow: hidden;
+        .navFooter{
+            .footerDesktop{
+                display: none;
+            }
+            .footerMobile{
+                display:block;
+                width: 15em;
+                margin: 0.1em 0.1em 0.1em 0.1em;
+                .enlacesFooter{
+                    width: 15em;
+                    padding: auto;
+                    margin: auto;
+                    .letraNav{
+                        font-size: 1.5em;
+                    }
+                    .ulFooter{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding: 0em ;
+                        .liFooter{
+                            display: inline;
+                            .aFooter{
+                                text-decoration: none;
+                                color: #f0f8ff;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

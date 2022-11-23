@@ -52,6 +52,7 @@ header{
     background-color: #015958;
     position: sticky;
     top: 0%;
+    z-index: 2;
     font-family: 'Tinos', serif;
     font-weight: 400;
 }
@@ -127,6 +128,7 @@ nav ul{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin: auto;
 }
 
 .link{
@@ -186,6 +188,14 @@ nav ul{
 }
 
 .articuloIndex{
+    height: 15em;
+    padding: 0.5em 1.5em;
+    margin: 3em 5em 3em 0em;
+    border: solid 0.2em #277058;
+    border-radius: 1em;
+}
+
+.carouselServicio{
     height: 15em;
     padding: 0.5em 1.5em;
     margin: 3em 5em 3em 0em;
@@ -490,10 +500,9 @@ footer nav{
     }
 
     .articuloHistorialMobile{
-        display:block;
-        margin:auto;
-        width: auto;
-        height: auto;
+        display:block; 
+        margin: auto;
+        width: 85%;
     }
 
     .tituloHistorial{
@@ -504,6 +513,14 @@ footer nav{
         font-size:small;
     }
 
+    .articuloIndex{
+        height: 16em;
+        padding: 0.5em 1.5em;
+        margin: 3em 5em 3em 0em;
+        border: solid 0.2em #277058;
+        border-radius: 1em;
+    }
+
 }
 
 @media screen and (min-width:480px) and (max-width:767px){
@@ -511,7 +528,7 @@ footer nav{
     .gridMain{
         grid-template-columns: 1fr;
     }
-    
+
     .articuloFaq{
         width: 20em;
         height: 10em;
@@ -622,13 +639,15 @@ footer nav{
     .articuloHistorialMobile{
         display:block;
         margin:auto;
-        width: auto;
-        height: auto;
-        padding: 1em 1.5em;
+        width: 85%;
     }
 
     .tituloHistorial{
         color:#000000;
+    }
+
+    .parrafoHistorial{
+        overflow: hidden;
     }
 
 

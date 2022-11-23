@@ -10,6 +10,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0%;
+  z-index: 2;
   font-family: "Tinos", serif;
   font-weight: 400;
   padding: 1em 1.5em;
@@ -27,6 +28,7 @@ header .ulHeader {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin: auto;
 }
 header .liHeader {
   display: inline;
@@ -40,6 +42,21 @@ header .link {
   right: 50%;
   transition: all 0.5s;
   will-change: width;
+}
+header .link::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  background-color: #7fffd4;
+  position: absolute;
+  bottom: 0%;
+  right: 50%;
+  transition: all 0.5s;
+  will-change: width;
+}
+header .link:hover::after {
+  width: 100%;
+  right: 0%;
 }
 
 .MainFaq {
@@ -55,7 +72,19 @@ header .link {
 .MainFaq h1 {
   color: #277058;
   font-family: "Tinos", serif;
-  font-weight: 700;
+  font-weight: 400;
+  text-align: center;
+}
+.MainFaq h2 {
+  color: #f0f8ff;
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  text-align: center;
+}
+.MainFaq p {
+  color: #000000;
+  font-family: "Tinos", serif;
+  font-weight: 400;
   text-align: center;
 }
 .MainFaq .seccionRow {
@@ -67,13 +96,16 @@ header .link {
   flex-wrap: wrap;
 }
 .MainFaq .seccionRow .articuloFaq {
-  width: 22em;
-  height: 13em;
+  width: 30em;
+  height: 15em;
   padding: 1em 1.5em;
   margin: 0.5em 0.7em 1em 0.7em;
   border: solid 0.2em #f0f8ff;
   border-radius: 1em;
   background-color: #277058;
+}
+.MainFaq .faqMobile {
+  display: none;
 }
 
 .footerMobile {
@@ -127,6 +159,242 @@ footer .navFooter .seccionRow .enlacesFooter .ulFooter .liFooter .aFooter {
   text-decoration: none;
   color: #f0f8ff;
 }
+footer .navFooter .footerMobile {
+  display: none;
+}
 footer .navFooter .letraCopy {
   font-size: small;
+}
+
+@media screen and (min-width: 390px) and (max-width: 479px) {
+  header {
+    font-size: 12px;
+    padding: 1em 1.5em;
+    margin: 0.2em 0.2em;
+    overflow: hidden;
+  }
+  header .navHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0%;
+  }
+  header .ico {
+    width: 2em;
+    display: block;
+    margin: auto;
+  }
+  header .ulHeader {
+    text-align: center;
+    padding: 0%;
+    margin: 0% 0%;
+  }
+  .MainFaq {
+    font-size: 12px;
+    padding: 1em 1.5em;
+    margin: 0.2em 0.2em;
+    overflow: hidden;
+  }
+  .MainFaq h1 {
+    color: #277058;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  .MainFaq h2 {
+    color: #000000;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  .MainFaq p {
+    color: #000000;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  .MainFaq ul {
+    color: #000000;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  .MainFaq .faqDesktop {
+    display: none;
+  }
+  .MainFaq .faqMobile {
+    display: block;
+    margin: auto;
+  }
+  .MainFaq .carouselDesktop {
+    display: none;
+  }
+  .MainFaq .carouselMobile {
+    display: block;
+  }
+  .articuloFaq {
+    width: 50em;
+    height: 17em;
+    padding: 1em 1.5em;
+    margin: 3em 5em 3em 0em;
+    border: solid 0.2em #000000;
+    border-radius: 1em;
+  }
+  .articuloFaq .articuloFaqMobile {
+    display: block;
+    margin: auto;
+    width: 85%;
+  }
+  footer {
+    font-size: 12px;
+    padding: 1em 1.5em;
+    margin: 0.2em 0.2em;
+    overflow: hidden;
+  }
+  footer .navFooter .footerDesktop {
+    display: none;
+  }
+  footer .navFooter .footerMobile {
+    display: block;
+    width: 15em;
+    margin: 0.1em 0.1em 0.1em 0.1em;
+  }
+  footer .navFooter .footerMobile .enlacesFooter {
+    width: 15em;
+    padding: auto;
+    margin: auto;
+  }
+  footer .navFooter .footerMobile .enlacesFooter .letraNav {
+    font-size: 1.5em;
+  }
+  footer .navFooter .footerMobile .enlacesFooter .ulFooter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0em;
+  }
+  footer .navFooter .footerMobile .enlacesFooter .ulFooter .liFooter {
+    display: inline;
+  }
+  footer .navFooter .footerMobile .enlacesFooter .ulFooter .liFooter .aFooter {
+    text-decoration: none;
+    color: #f0f8ff;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  header {
+    font-size: 12px;
+    padding: 1em 1.5em;
+    margin: 0.2em 0.2em;
+    overflow: hidden;
+  }
+  header .navHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0%;
+  }
+  header .ico {
+    width: 2em;
+    display: block;
+    margin: auto;
+  }
+  header .ulHeader {
+    text-align: center;
+    padding: 0%;
+    margin: 0% 0%;
+  }
+  .MainFaq {
+    font-size: 12px;
+    padding: 1em 1.5em;
+    margin: 0.2em 0.2em;
+    overflow: hidden;
+  }
+  .MainFaq h1 {
+    color: #277058;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  .MainFaq h2 {
+    color: #000000;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  .MainFaq p {
+    color: #000000;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  .MainFaq ul {
+    color: #000000;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  .MainFaq .faqDesktop {
+    display: none;
+  }
+  .MainFaq .faqMobile {
+    display: block;
+    margin: auto;
+  }
+  .MainFaq .carouselDesktop {
+    display: none;
+  }
+  .MainFaq .carouselMobile {
+    display: block;
+  }
+  .articuloFaq {
+    width: 50em;
+    height: 15em;
+    padding: 1em 1.5em;
+    margin: 3em 5em 3em 0em;
+    border: solid 0.2em #000000;
+    border-radius: 1em;
+  }
+  .articuloFaq .articuloFaqMobile {
+    display: block;
+    margin: auto;
+    width: 85%;
+  }
+  footer {
+    font-size: 12px;
+    padding: 1em 1.5em;
+    margin: 0.2em 0.2em;
+    overflow: hidden;
+  }
+  footer .navFooter .footerDesktop {
+    display: none;
+  }
+  footer .navFooter .footerMobile {
+    display: block;
+    width: 15em;
+    margin: 0.1em 0.1em 0.1em 0.1em;
+  }
+  footer .navFooter .footerMobile .enlacesFooter {
+    width: 15em;
+    padding: auto;
+    margin: auto;
+  }
+  footer .navFooter .footerMobile .enlacesFooter .letraNav {
+    font-size: 1.5em;
+  }
+  footer .navFooter .footerMobile .enlacesFooter .ulFooter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0em;
+  }
+  footer .navFooter .footerMobile .enlacesFooter .ulFooter .liFooter {
+    display: inline;
+  }
+  footer .navFooter .footerMobile .enlacesFooter .ulFooter .liFooter .aFooter {
+    text-decoration: none;
+    color: #f0f8ff;
+  }
 }/*# sourceMappingURL=main.css.map */
